@@ -1,0 +1,25 @@
+{
+  "name": "search-and-filtering-nodejs",
+  "version": "1.0.0",
+  "description": "nodejs를 사용하여 검색 및 필터링 기능을 구현 연습을 해보는 레포입니다.",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vanillacake369/search-and-filtering-nodejs.git"
+  },
+  "author": "jihoon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vanillacake369/search-and-filtering-nodejs/issues"
+  },
+  "homepage": "https://github.com/vanillacake369/search-and-filtering-nodejs#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.19"
+  }
+}
