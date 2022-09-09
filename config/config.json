@@ -1,0 +1,23 @@
+{
+  "development": {
+    "username": "root",
+    "password": "coldbrew365",
+    "database": "oneroom_development",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "root",
+    "password": null,
+    "database": "oneroom_test",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "oneroom_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
