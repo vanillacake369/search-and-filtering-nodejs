@@ -1,3 +1,5 @@
+/*
+
 // 모듈 import
 const Sequelize = require('sequelize');
 // 모델 import
@@ -17,4 +19,4 @@ const db = {};
 // sequlize 객체 생성
 const sequelize = new Sequelize(config.database, config.username, config.password, config);
 
-// 
+*/

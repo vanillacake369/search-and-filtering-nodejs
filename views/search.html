@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>{{title}}</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- <link rel="stylesheet" href="/main.css"> -->
+</head>
+
+<!-- test filter 
+key : value 
+- size : 1평,3평 ...
+- rent : 전체,30,50,...
+- type : 원룸, 아파트 ...
+- year : 6개월,1년,3년 ...
+-->
+
+<body>
+    <div class="container">
+        <div class="filter-wrap">
+            <div class="filter">
+                <form method="get" id="search-form" action="/search">
+                    <div>
+                        <ul class="size">
+                            <li>
+                                <input type="radio" name="size" id="size_all" value="size_all"> <label
+                                    for="size_all">전체</label>>
+                                <input type="radio" name="size" id="size_1" value="size_1"> <label for="size_1">3평
+                                    이하</label>>
+                                <input type="radio" name="size" id="size_2" value="size_2"> <label
+                                    for="size_2">3~9평</label>>
+                                <input type="radio" name="size" id="size_3" value="size_3"> <label for="size_3">9평
+                                    이상</label>>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="rent">
+                            <li>
+                                <input type="radio" name="rent" id="rent_all" value="rent_all"> <label
+                                    for="rent_all">전체</label>>
+                                <input type="radio" name="rent" id="rent_1" value="rent_1"> <label for="rent_1">150
+                                    이하</label>>
+                                <input type="radio" name="rent" id="rent_2" value="rent_2"> <label
+                                    for="rent_2">150~200</label>>
+                                <input type="radio" name="rent" id="rent_3" value="rent_3"> <label for="rent_3">200
+                                    이상</label>>
+                            </li>
+                        </ul>
+                    </div>
+                    <div>
+                        <ul class="type">
+                            <li>
+                                <input type="radio" name="type" id="type_all" value="type_all"> <label
+                                    for="type_all">전체</label>>
+                                <input type="radio" name="type" id="type_1" value="type_1"> <label
+                                    for="type_1">원룸</label>>
+                                <input type="radio" name="type" id="type_2" value="type_2"> <label
+                                    for="type_2">투룸</label>>
+                                <input type="radio" name="type" id="type_3" value="type_3"> <label
+                                    for="type_3">오피스텔</label>>
+                            </li>
+                        </ul>
+                    </div>
+                    <p><input type="submit" value="Submit"> <input type="reset" value="Reset"></p>
+                </form>
+
+            </div>
+            <footer>
+                Made by&nbsp;
+                <!-- 공백특수문자 -->
+                <a href="https://vanillacake369.notion.site/Home-3a919fbf197e4a42b124cb0aabe6239f" target="_blank">Tony
+                    Lim</a>
+            </footer>
+        </div>
+        {% block content %}
+        {% endblock %}
+    </div>
+    {% block script %}
+    {% endblock %}
+</body>
+
+</html>
